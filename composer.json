@@ -2,7 +2,7 @@
 	"name": "iqnection-pages/staffpage",
 	"description": "SilverStripe 3 Staff Page",
 	"type": "silverstripe-module",
-	"keywords": ["iqnection"],
+	"keywords": ["iqnection","pages"],
 	"authors": [
 		{
 			"name": "IQnection",
