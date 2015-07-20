@@ -23,15 +23,16 @@
 		
 		public function getCMSFields()
 		{
+			$fields = new FieldList();
 			$image_field = new UploadField("Image", "Staff Image");
 			$image_field->setAllowedFileCategories('image');
-			return new FieldList(
-				new TextField('Name', 'Staff Name'),
-				new TextField('Title', 'Staff Title'),
-				$image_field,
-				new TextField('Caption', 'Inside Picture Caption'),
-				new HTMLEditorField('Bio', 'Staff Bio')
-			);
+			$fields->push( new TextField('Name', 'Staff Name'));
+			$fields->push( new TextField('Title', 'Staff Title'));
+			$fields->push( $image_field);
+			$fields->push( new TextField('Caption', 'Inside Picture Caption'));
+			$fields->push( new HTMLEditorField('Bio', 'Staff Bio'));
+			$this->extend('updateCMSFields',$fields);
+			return $fields;
 		}
 		
 		public function getLandingThumb()
