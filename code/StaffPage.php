@@ -86,7 +86,7 @@
 				new GridFieldDeleteAction(),
 				new GridFieldDetailForm()				
 			);
-			$fields->addFieldToTab('Root.Content.StaffMembers', new GridField('StaffMembers','Staff Members',$this->StaffMembers(),$staff_config));
+			$fields->addFieldToTab('Root.StaffMembers', new GridField('StaffMembers','Staff Members',$this->StaffMembers(),$staff_config));
 			return $fields;
 		}		
 	}
