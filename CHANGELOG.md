@@ -1,6 +1,9 @@
-## Package: iqnection-silverstripe-3-modules-seo
+## Package: iqnection-silverstripe-modules-seo
 # Change Log
 
+
+## [2.0.0]
+- updated for SilverStripe 4
 
 ## [1.0.2]
 - Improved code and templates

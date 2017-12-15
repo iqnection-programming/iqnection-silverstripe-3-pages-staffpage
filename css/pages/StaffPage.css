@@ -1,55 +1,53 @@
-#staff_members					{ list-style:none; margin:30px auto !important; padding:0; width:100%; }
-#staff_members:after			{ content:"."; display:block; height:0; clear:both; zoom:1; visibility:hidden; }
-#staff_members li				{ margin:0 0 1% 1%; padding:0; float:left; width:19.2%; position:relative; }
+#staff_members								{ list-style:none; margin:30px auto !important; padding:0; width:100%; }
+#staff_members:after						{ content:"."; display:block; height:0; clear:both; zoom:1; visibility:hidden; }
+#staff_members li							{ margin:0 0 1% 1%; padding:0; float:left; width:19.2%; position:relative; }
 
-.sponsor_images					{ border:1px #cacaca solid; }
-.sponsor_link					{ display:block; }	
-.sponsor_link img				{ display:block; width:100%; }							
-.sponsor_labels					{ width:100%; padding:5px 10px; position:absolute; bottom:0; left:0; background:#FFF; background:rgba(255,255,255,.75);
-								-webkit-transition: all 250ms ease;
-								-moz-transition: all 250ms ease;
-								-ms-transition: all 250ms ease;
-								-o-transition: all 250ms ease;
-								transition: all 250ms ease;	
-								}
-.sponsor_labels p				{ margin-bottom:0; font-size:16px; line-height:20px; }
-.sponsor_name					{ font-weight:bold; }
+.staff_images								{ border:1px #cacaca solid; }
+.staff_link									{ display:block; }	
+.staff_link img								{ display:block; width:100%; }							
+.staff_labels								{ width:100%; padding:5px 0 10px; }
+.staff_labels p								{ margin-bottom:0; font-size:16px; line-height:20px; text-align:center; }
+.staff_name									{ font-weight:bold; }
+#staff_members a:hover						{ text-decoration:none; }
+#staff_members a:hover .staff_labels 		{ background:rgba(0,0,0,0.1);  }
+#staff_members a *							{
+	-webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease; }
 
-#staff_members a:hover .sponsor_labels { padding-bottom:10px; background:rgba(255,255,255,.95); }
+#staff_left									{ float:left; width:27%; }
+#staff_left img								{ display:block; max-width:100%; }
+#staff_left p								{ background:#f3f3f3; padding:10px; border:1px #f3f3f3 solid; margin:0; }
+#staff_right								{ float:right; width:70%; }
+.staff_title								{ font-weight:normal; }
 
-#staff_left						{ float:left; width:27%; }
-#staff_left img					{ display:block; max-width:100%; }
-#staff_left p					{ background:#f3f3f3; padding:10px; border:1px #f3f3f3 solid; margin:10px 0 0; }
-#staff_right					{ float:right; width:70%; }
-.sponsor_title					{ font-weight:normal; }
 
-@media (min-width:830px){
-	#staff_members li:nth-child(5n+1)	{ margin:0; clear:left; }
+@media (min-width:801px){
+	#staff_members li:nth-child(5n+1)		{ margin:0; clear:left; }
 }
 
-@media (max-width:829px) and (min-width:679px){
-	#staff_members > li			{ width:24.25%; }
-	#staff_members > li:nth-child(4n+1)
-								{ margin:0; clear:both; }
+@media (max-width:800px) and (min-width:651px){
+	#staff_members > li						{ width:24.25%; }
+	#staff_members > li:nth-child(4n+1)		{ margin:0; clear:both; }
 }
 
-@media (max-width:679px) and (min-width:529px){
-	#staff_members > li			{ width:32.66%; }
-	#staff_members > li:nth-child(3n+1)
-								{ margin:0; clear:both; }
+@media (max-width:650px) and (min-width:501px){
+	#staff_members > li						{ width:32.66%; }
+	#staff_members > li:nth-child(3n+1)		{ margin:0; clear:both; }
 }
 
-@media (max-width:599px){
-	#staff_left					{ width:auto; max-width:270px; margin:0 auto; float:none; }
-	#staff_right				{ width:100%; margin:15px 0 0; }
+@media (max-width:600px){
+	#staff_left								{ width:auto; max-width:270px; margin:0 auto; float:none; }
+	#staff_right							{ width:100%; margin:15px 0 0; }
 }
 
-@media (max-width:529px) and (min-width:379px){
-	#staff_members > li			{ width:49.5%; }
-	#staff_members > li:nth-child(2n+1)
-								{ margin:0; clear:both; }
+@media (max-width:500px) and (min-width:381px){
+	#staff_members > li						{ width:49.5%; }
+	#staff_members > li:nth-child(2n+1)		{ margin:0; clear:both; }
 }
 
-@media (max-width:379px){
-	#staff_members > li			{ margin-left:0; margin-top:2%; width:100%; }
+@media (max-width:380px){
+	#staff_members > li						{ margin-left:0; margin-top:2%; width:100%; }
 }
