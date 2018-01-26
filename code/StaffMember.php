@@ -54,8 +54,8 @@ class StaffMember extends ORM\DataObject
 	public function validate()
 	{
 		$result = parent::validate();
-		if (!$this->Name) { $result->error('Please provide a Name'); }
-		if (!$this->Image()->Exists()) { $result->error('Please provide a Photo'); }
+		if (!$this->Name) { $result->addError('Please provide a Name'); }
+		if (!$this->Image()->Exists()) { $result->addError('Please provide a Photo'); }
 		return $result;
 	}
 	
