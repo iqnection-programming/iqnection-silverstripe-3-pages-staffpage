@@ -1,10 +1,14 @@
 <?php
 
+namespace IQnection\StaffPage\Model;
+
 use SilverStripe\ORM;
 use SilverStripe\Forms;
 
 class StaffMember extends ORM\DataObject
 {
+	private static $table_name = 'StaffMember';
+	
 	private static $db = [
 		"SortOrder" => "Int",
 		"Name" => "Varchar(255)",
@@ -14,8 +18,8 @@ class StaffMember extends ORM\DataObject
 	];
 	
 	private static $has_one = [
-		"Image" => SilverStripe\Assets\Image::class,
-		"StaffPage" => StaffPage::class
+		"Image" => \SilverStripe\Assets\Image::class,
+		"StaffPage" => \IQnection\StaffPage\StaffPage::class
 	];
 	
 	private static $summary_fields = [

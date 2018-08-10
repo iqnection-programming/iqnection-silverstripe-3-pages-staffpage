@@ -12,9 +12,17 @@
 	],
 	"require": {
 		"silverstripe/framework": "^4.0",
-		"iqnection-pages/basepages":"^2.0"
+		"iqnection-pages/basepages":"^2.1"
 	},
 	"extra": {
-		"installer-name": "iq-staffpage"
+		"expose": [
+			"css",
+			"images"
+		]
+	},
+	"autoload": {
+		"psr-4": {
+			"IQnection\\StaffPage\\": "app/src/"
+		}
 	}
 }

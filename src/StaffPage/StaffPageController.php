@@ -1,7 +1,8 @@
 <?php
 
+namespace IQnection\StaffPage;
 
-class StaffPageController extends PageController
+class StaffPageController extends \PageController
 {	
 	private static $allowed_actions = [
 		"member"

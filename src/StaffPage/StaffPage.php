@@ -1,16 +1,20 @@
 <?php
 
+namespace IQnection\StaffPage;
+
 use SilverStripe\Forms;
 use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 
-class StaffPage extends Page
+class StaffPage extends \Page
 {
-	private static $icon = "iq-staffpage/images/icons/staffpage-icon.png";
+	private static $icon = "resources/iqnection-pages/staffpage/images/icons/staffpage-icon.png";
+	
+	private static $table_name = 'StaffPage';
 	
 	private static $db = [];
 	
 	private static $has_many = [
-		"StaffMembers" => StaffMember::class
+		"StaffMembers" => Model\StaffMember::class
 	];
 	
 	public function getCMSFields()
