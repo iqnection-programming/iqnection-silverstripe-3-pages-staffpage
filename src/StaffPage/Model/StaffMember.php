@@ -37,6 +37,10 @@ class StaffMember extends ORM\DataObject
 	public function getCMSFields()
 	{
 		$fields = parent::getCMSFields();
+		$fields->removeByName([
+			'LinkTracking',
+			'FileTracking'
+		]);
 		$fields->push( Forms\HiddenField::create('SortOrder',null,$fields->dataFieldByName('SortOrder')->Value()) );
 
 		$fields->dataFieldByName('Title')->setTitle('Position/Title');

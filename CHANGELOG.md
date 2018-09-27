@@ -1,6 +1,9 @@
 ## Package: iqnection-silverstripe-modules-seo
 # Change Log
 
+## [2.2.0]
+- new template layouts and CSS
+
 ## [2.1.0]
 - updated to follow SS 4.1 /public/ directory structure
 
