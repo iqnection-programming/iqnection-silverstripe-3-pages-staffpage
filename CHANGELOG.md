@@ -1,6 +1,9 @@
 ## Package: iqnection-silverstripe-modules-seo
 # Change Log
 
+## [2.2.1]
+- Added IQnection Image Utilities for selective cropping
+
 ## [2.2.0]
 - new template layouts and CSS
 

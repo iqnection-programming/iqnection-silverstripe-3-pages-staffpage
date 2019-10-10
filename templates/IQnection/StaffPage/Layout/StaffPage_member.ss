@@ -1,7 +1,7 @@
 <% with StaffMember %>
 	<div class="staff-member-layout">
 		<div class="staff-left">
-			<img src="$Image.Fill(350,400).URL" alt="$Name $Title" />
+			<img src="$Image.Fit(350,400).URL" alt="$Name $Title" />
 			<% if $Caption %><p>$Caption</p><% end_if %>
 		</div><!--staff_left-->
 		<div class="staff-right">

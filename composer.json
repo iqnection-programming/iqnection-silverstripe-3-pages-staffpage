@@ -12,7 +12,8 @@
 	],
 	"require": {
 		"silverstripe/framework": "^4.0",
-		"iqnection-pages/basepages":"^2.1"
+		"iqnection-pages/basepages":"^2.1",
+		"iqnection-modules/image-utilities":"^0.0.1"
 	},
 	"extra": {
 		"expose": [

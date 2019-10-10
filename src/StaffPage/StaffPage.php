@@ -7,7 +7,7 @@ use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 
 class StaffPage extends \Page
 {
-	private static $icon = "resources/iqnection-pages/staffpage/images/icons/staffpage-icon.png";
+	private static $icon = "iqnection-pages/staffpage:images/icons/staffpage-icon.png";
 	
 	private static $table_name = 'StaffPage';
 	

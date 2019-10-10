@@ -4,7 +4,7 @@ $Content
     <% loop $StaffMembers %>
         <li>
             <a class="staff_link" href="$Link">
-            	<img class="staff_static" src="$Image.Fill(350,400).URL" alt="$Name $Title" />
+            	<img class="staff_static" src="$Image.FillFrom(350, 400, $CropPosition).URL" alt="$Name $Title" />
                 <div class="staff_labels">
                     <p class="staff_name">$Name</p>
                     <% if $Title %><p class="staff_title">$Title</p><% end_if %>

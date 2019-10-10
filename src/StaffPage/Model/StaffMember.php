@@ -14,7 +14,8 @@ class StaffMember extends ORM\DataObject
 		"Name" => "Varchar(255)",
 		"Title" => "Varchar(255)",
 		"Caption" => "Varchar(255)",
-		"Bio" => "HTMLText"
+		"Bio" => "HTMLText",
+		'CropPosition' => "Enum('Top Left,Top Center, Top Right, Left Middle, Center, Right Middle, Bottom Left, Bottom Center, Bottom Right','Center')"
 	];
 	
 	private static $has_one = [
@@ -30,6 +31,10 @@ class StaffMember extends ORM\DataObject
 	
 	private static $owns = [
 		"Image"
+	];
+	
+	private static $defaults = [
+		'CropPosition' => 'Center'
 	];
 	
 	private static $default_sort = "SortOrder ASC";
@@ -49,6 +54,7 @@ class StaffMember extends ORM\DataObject
 			->setTitle('Photo')
 			->setDescription('Image will be cropped to 350x400px')
 			->setFolderName('staff-members');
+		$fields->insertAfter('Image', $fields->dataFieldByName('CropPosition') );
 		$fields->dataFieldByName('Caption')->setTitle('Member Page Photo Caption');
 		$this->extend('updateCMSFields',$fields);
 		return $fields;
